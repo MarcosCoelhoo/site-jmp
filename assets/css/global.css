@@ -1,0 +1,32 @@
+:root {
+  --grupo-eden: #000;
+  --grupo-navegadores: #5deb19;
+  --grupo-xavantes: #2db5ee;
+  --rosa: #FF8787;
+  --vermelho: #FF3737;
+  --dourado: #E5CF00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h1, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,149 @@
+.mensageiros {
+  /* border: 1px solid red; */
+  padding: 20px 40px;
+}
+
+.mensageiros-title {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: var(--vermelho);
+  margin-bottom: 40px;
+}
+
+.mensageiros-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mensageiros-cards li {
+  display: grid;
+  row-gap: 10px;
+  box-shadow: 0 0 0px 2px var(--rosa);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.card-content {
+  display: grid;
+  row-gap: 15px;
+}
+
+.card-image {
+  width: 215px;
+}
+
+.card-image img {
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-name {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.2rem;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-info .info-idade {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tag-eden {
+  background: var(--grupo-eden);
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+
+.tag-navegadores {
+  background: var(--grupo-navegadores);
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+
+.tag-xavantes {
+  background: var(--grupo-xavantes);
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+
+.card-button a {
+  display: block;
+  background: var(--rosa);
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.card-button a:hover {
+  background: #e24848;
+}
+
+@media (max-width: 600px) {
+  .mensageiros-title {
+    font-size: 2rem;
+  }
+
+  .tag-grupo {
+    font-size: .8rem;
+  }
+
+  .info-idade {
+    font-size: .9rem;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .mensageiros {
+    padding: 20px;
+  }
+  .mensageiros-cards {
+    justify-content: left;
+    row-gap: 15px;
+    /* justify-content: space-between; */
+  }
+}
+
+@media (max-width: 500px) {
+  .mensageiros-cards li .card-image {
+    width: 145px;
+  }
+
+  .mensageiros-cards {
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mensageiros-cards li .card-image {
+    width: 125px;
+    height: 245px;
+  }
+
+  .tag-grupo {
+    font-size: .6rem;
+  }
+
+  .info-idade {
+    font-size: .8rem;
+  }
+}

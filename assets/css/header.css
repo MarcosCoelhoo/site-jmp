@@ -1,0 +1,41 @@
+header {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  padding: 10px 40px;
+  background: var(--rosa);
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header-logo {
+  width: 140px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 5px 20px;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header-logo {
+    width: 80px;
+  }
+}
