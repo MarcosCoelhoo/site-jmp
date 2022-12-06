@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .landing-title {
     font-size: 1.2rem;
     top: 10px;
