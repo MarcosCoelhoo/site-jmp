@@ -1,0 +1,94 @@
+.user {
+  display: flex;
+  gap: 10px;
+  padding: 40px;
+  width: auto;
+}
+
+.user-image {
+  width: 230px;
+}
+
+.user-image img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.user-idade {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.user-social {
+  display: flex;
+  gap: 20px;
+}
+
+.user-social .social-box {
+  width: 40px;
+}
+
+.user-social .social-box img {
+  width: 100%;
+}
+
+.description {
+  padding: 0 40px 60px 40px;
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  gap: 10px;
+}
+
+.description-text {
+  font-family: "Epilogue";
+  max-width: 70ch;
+  color: rgba(37, 37, 37, 0.5);
+}
+
+.description-text p {
+  
+  word-break: break-all;
+}
+
+@media (max-width: 600px) {
+  .user {
+    padding: 20px;
+  }
+  .user-image {
+    width: 130px;
+  }
+
+  .user-content {
+    gap: 15px;
+  }
+
+  .user-name {
+    font-size: 1.2rem;
+  }
+
+  .social-box {
+    width: 20px;
+  }
+
+  .description {
+    padding: 0 20px 60px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .user-tags .tag-grupo {
+    font-size: 0.5rem;
+  }
+}

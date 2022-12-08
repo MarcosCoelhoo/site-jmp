@@ -3,7 +3,6 @@
   justify-content: end;
   align-items: center;
   position: relative;
-  margin-top: 89px
 }
 
 .landing-title {
@@ -45,19 +44,11 @@
     top: 30px;
     left: 20px;
   }
-
-  .header-landing {
-    margin-top: 79px;
-  }
 }
 
 @media (max-width: 500px) {
   .landing-title {
     font-size: 1.2rem;
     top: 10px;
-  }
-
-  .header-landing {
-    margin-top: 69px;
   }
 }
