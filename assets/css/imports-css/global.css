@@ -2,9 +2,9 @@
   --grupo-eden: #000;
   --grupo-navegadores: #5deb19;
   --grupo-xavantes: #2db5ee;
-  --rosa: #FF8787;
-  --vermelho: #FF3737;
-  --dourado: #E5CF00;
+  --rosa: #ff8787;
+  --vermelho: #ff3737;
+  --dourado: #e5cf00;
 }
 
 * {
@@ -21,7 +21,11 @@ li {
   box-sizing: border-box;
 }
 
-h1, h1, h3, h4, p {
+h1,
+h1,
+h3,
+h4,
+p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +41,7 @@ a {
   border-radius: 3px;
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .tag-eden {
@@ -68,6 +72,6 @@ a {
 
 @media (max-width: 500px) {
   .section-top {
-    margin-top: 69px;
+    margin-top: 39px;
   }
 }

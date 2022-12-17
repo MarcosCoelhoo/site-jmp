@@ -1,5 +1,7 @@
-@import "./global.css";
-@import "./header.css";
-@import "./landing.css";
-@import "./mensageiros.css";
-@import "./user.css";
+@import "./imports-css/global.css";
+@import "./imports-css/header.css";
+@import "./imports-css/landing.css";
+@import "./imports-css/mensageiros.css";
+@import "./imports-css/user.css";
+@import "./imports-css/user.css";
+@import "./imports-css/navigate.css";

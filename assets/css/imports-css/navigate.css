@@ -1,0 +1,86 @@
+.navigate {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.navigate .navigate-buttons {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+}
+
+.navigate .navigate-buttons a {
+  display: flex;
+  gap: 10px;
+  background: var(--rosa);
+  padding: 14px 15px;
+  border-radius: 5px;
+  color: #fff;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 4px 5px 0 0 #c36262;
+  transition: 0.3s;
+}
+
+.navigate .navigate-buttons a:hover {
+  box-shadow: 7px 8px 0 0 #c36262;
+}
+
+.navigate .navigate-buttons a h2 {
+  font-size: 2rem;
+}
+
+.navigate .navigate-buttons a:not(:last-child) h2 {
+  width: 7ch;
+  word-break: break-all;
+}
+
+.navigate .navigate-buttons a p {
+  width: 14ch;
+  font-size: 1rem;
+  word-break: break-all;
+  font-weight: 300;
+  color: rgba(236, 236, 236, 0.8);
+}
+
+.divisor {
+  height: 100%;
+  width: 3px;
+  background: #fff;
+}
+
+@media (max-width: 1200px) {
+  .navigate .navigate-buttons a h2 {
+    font-size: 1.5rem;
+  }
+
+  .navigate .navigate-buttons a p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigate .navigate-buttons a h2 {
+    font-size: 1rem;
+  }
+
+  .navigate .navigate-buttons a p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navigate .navigate-buttons a h2 {
+    font-size: 0.9rem;
+  }
+
+  .navigate .navigate-buttons a p {
+    font-size: 0.5rem;
+  }
+
+  .navigate .navigate-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}

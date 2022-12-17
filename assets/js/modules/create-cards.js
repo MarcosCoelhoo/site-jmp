@@ -1,15 +1,19 @@
-const members = fetch("./membros.json");
-const containerCards = document.querySelector(".mensageiros-cards");
+import initScrollReveal from "./scroll-reveal.js";
 
-function creatCard() {
-  members
-    .then((response) => response.json())
-    .then((body) => {
-      body.forEach((membersInfo) => {
-        console.log(membersInfo.tag);
-        const li = document.createElement("li");
+export default function initCreateCard() {
+  const members = fetch("./membros.json");
+  const containerCards = document.querySelector(".mensageiros-cards");
+  createCard();
+  function createCard() {
+    members
+      .then((response) => response.json())
+      .then((body) => {
+        body.forEach((membersInfo) => {
+          const li = document.createElement("li");
 
-        li.innerHTML = `
+          li.setAttribute("data-anime", "scroll");
+
+          li.innerHTML = `
         <div class="card-image">
         <img src="./assets/imgs/img-teste.png" alt="" width="215px" height="275px">
         <div class="card-grupo">
@@ -29,9 +33,10 @@ function creatCard() {
         </div>
         `;
 
-        containerCards.appendChild(li);
-      });
-    });
-}
+          containerCards.appendChild(li);
 
-window.addEventListener("load", creatCard);
+          initScrollReveal();
+        });
+      });
+  }
+}
