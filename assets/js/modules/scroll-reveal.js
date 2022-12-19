@@ -8,7 +8,7 @@ export default function initScrollReveal() {
   function animaScroll() {
     cards.forEach((item) => {
       const cardTop = item.getBoundingClientRect().top;
-      const cardVisible = cardTop - windowHalf < 0;
+      const cardVisible = cardTop - windowHalf < 200;
 
       if (cardVisible) {
         item.classList.add("ativo");
